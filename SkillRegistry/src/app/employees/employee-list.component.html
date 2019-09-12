@@ -1,0 +1,61 @@
+<div class='card'>
+  <div class='card-header'>
+    {{pageTitle}}
+  </div>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-2'>Filter by:</div>
+      <div class='col-md-4'>
+        <input type='text'
+               [(ngModel)]='listFilter' />
+      </div>
+    </div>
+    <div class='row'
+         *ngIf='listFilter'>
+      <div class='col-md-6'>
+        <h4>Filtered by: {{listFilter}}</h4>
+      </div>
+    </div>
+    <div class='table-responsive'>
+      <table class='table'
+             *ngIf='employees && employees.length'>
+        <thead>
+          <tr>
+            <th>
+            </th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Project On</th>
+            <th>Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let employee of filteredEmployees'>
+            <td>
+              <img 
+                   [src]='employee.imageUrl'
+                   [title]='employee.employeeName'
+                   [style.width.px]='imageWidth'
+                   [style.margin.px]='imageMargin'>
+            </td>
+            <td>
+              <a [routerLink]="['/employees', employee.employeeId]">
+                {{ employee.employeeName }}
+              </a>
+            </td>
+            <td>{{ employee.employeePosition }}</td>
+            <td>{{ employee.currentProject }}</td>
+            <td>{{ employee.skills }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      
+    </div>
+  </div>
+</div>
+<div *ngIf='errorMessage'
+     class='alert alert-danger'>
+  Error: {{ errorMessage }}
+</div>

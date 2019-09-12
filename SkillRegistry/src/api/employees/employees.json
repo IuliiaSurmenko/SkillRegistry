@@ -1,0 +1,42 @@
+[
+  {
+    "employeeId": 1,
+    "employeeName": "Ellie Khan",
+    "employeePosition": "Pega Developer",
+    "currentProject": "5632-03 PCB & RD Workflow Ph 2",
+    "skills": "Pega RFA",
+    "imageUrl": "assets/images/Ellie_Khan.jpg"
+  },
+  {
+    "employeeId": 2,
+    "employeeName": "Cameron Brook",
+    "employeePosition": "St TSA",
+    "currentProject": "4653-23 Canadian Retail Service Upgrade",
+    "skills": "Pega Java JavaScript",
+    "imageUrl": "assets/images/Cameron_Brook.jpg"
+  },
+  {
+    "employeeId": 5,
+    "employeeName": "Maddison Bruke",
+    "employeePosition": "Developer",
+    "currentProject": "6475-90",
+    "skills": "Paga RPA",
+    "imageUrl": "assets/images/Maddison_Bruke.jpg"
+  },
+  {
+    "employeeId": 8,
+    "employeeName": "Rohan Byers",
+    "employeePosition": "Sr. Developer",
+    "currentProject": "6576-01 I&TS Client in 2019",
+    "skills": "Java AWS Javascript",
+    "imageUrl": "assets/images/Rohan_Byers.jpg"
+  },
+  {
+    "employeeId": 10,
+    "employeeName": "Tommy Blair",
+    "employeePosition": "BPM Consultant",
+    "currentProject": "64-75-08 Omni salesforce Rebuild service",
+    "skills": "Java AWS JavaScript",
+    "imageUrl": "assets/images/Tommy_Blair.jpg"
+  }
+]
